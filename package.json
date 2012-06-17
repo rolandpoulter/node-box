@@ -1,0 +1,17 @@
+{
+	"name": "bxjs",
+	"main": "./lib/Box.js",
+	"author": "rolandpoulter",
+	"version": "0.0.1",
+	"keywords": [],
+	"homepage": "https://github.com/rolandpoulter/node-box-js",
+	"repository": {"type": "git", "url": "git://github.com/rolandpoulter/node-box-js"},
+	"description": "",
+	"contributors": [],
+	"dependencies": {
+		"clss": ">= 0.0.1",
+		"uglify-js": ">= 1.2.5"
+	},
+	"devDependencies": {"spc": ">= 0.0.1"},
+	"scripts": {"test": "node ./script/test.js"}
+}
