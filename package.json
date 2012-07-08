@@ -1,6 +1,6 @@
 {
 	"name": "bxjs",
-	"main": "./lib/Box.js",
+	"main": "./lib/_Box.js",
 	"author": "rolandpoulter",
 	"version": "0.0.1",
 	"keywords": [],
@@ -10,6 +10,9 @@
 	"contributors": [],
 	"dependencies": {
 		"clss": ">= 0.0.1",
+		"ptns": ">= 0.0.1",
+		"mttr": ">= 0.0.1",
+		"async": ">= 0.0.1",
 		"uglify-js": ">= 1.2.5"
 	},
 	"devDependencies": {"spc": ">= 0.0.1"},

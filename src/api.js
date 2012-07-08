@@ -1,7 +1,6 @@
 /*jslint smarttabs:true */
 (function(){"use strict";
 	var global = this,
-	    require = this.require,
 	    modules = {};
 	function resolveModule (path) {
 		var slash = path.indexOf('/'),
@@ -105,8 +104,6 @@
 			if (path) {
 				obj = this.require(path);
 				obj.require = this.require;
-				obj.conflict = this.conflict;
-				obj.noConflict = this.noConflict;
 				return obj;
 			}
 			return this;

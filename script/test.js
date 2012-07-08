@@ -1,0 +1,1 @@
+require('spc/reporter/dot')(module.exports = require('../test/index'));
