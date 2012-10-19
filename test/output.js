@@ -1,6 +1,5 @@
 
 (function(){
-/*jslint smarttabs:true */
 (function(){"use strict";
 	var global = this,
 	    modules = {};
@@ -257,17 +256,17 @@ module.exports = Emitter.clss('BoxJS', function (def) {
 });
 });
 
-api.provide("/lib/loaders/fs", function api_fs (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/roland/github/rolandpoulter/node-box/lib/loaders/fs');});
+api.provide("/lib/loaders/fs", function api_fs (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/rolandpoulter/github/node-box/lib/loaders/fs');});
 
-api.provide("/lib/uglify-js", function api_uglify_js (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/roland/github/rolandpoulter/node-box/lib/uglify-js');});
+api.provide("/lib/uglify-js", function api_uglify_js (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/rolandpoulter/github/node-box/lib/uglify-js');});
 
-api.provide("/lib/path", function api_path (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/roland/github/rolandpoulter/node-box/lib/path');});
+api.provide("/lib/path", function api_path (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/rolandpoulter/github/node-box/lib/path');});
 
-api.provide("/lib/async", function api_async (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/roland/github/rolandpoulter/node-box/lib/async');});
+api.provide("/lib/async", function api_async (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/rolandpoulter/github/node-box/lib/async');});
 
-api.provide("/lib/mttr", function api_mttr (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/roland/github/rolandpoulter/node-box/lib/mttr');});
+api.provide("/lib/mttr", function api_mttr (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/rolandpoulter/github/node-box/lib/mttr');});
 
-api.provide("/lib/ptns", function api_ptns (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/roland/github/rolandpoulter/node-box/lib/ptns');});
+api.provide("/lib/ptns", function api_ptns (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/rolandpoulter/github/node-box/lib/ptns');});
 api.provide("/lib/DependencyList", function api_DependencyList (require, module, exports, __dirname, __firname) {/*jslint smarttabs:true */
 
 "use strict";
@@ -382,7 +381,7 @@ FileLoader = require('./loaders/FileLoader');
 ModuleLoader = require('./loaders/ModuleLoader');
 });
 
-api.provide("/lib/clss", function api_clss (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/roland/github/rolandpoulter/node-box/lib/clss');});
+api.provide("/lib/clss", function api_clss (require, module, exports, __dirname, __firname) {module.exports = require('.//Users/rolandpoulter/github/node-box/lib/clss');});
 api.provide("/lib/loaders/FileLoader", function api_FileLoader (require, module, exports, __dirname, __firname) {/*jslint smarttabs:true */
 
 "use strict";
@@ -674,8 +673,6 @@ var Reference = require('./Reference');
 module.exports = Reference.clss('Module', function (def) {
 	def.compileSource = function (from, apiName) {
 		var source = '';
-
-		//console.log(this.loader);
 
 		if (this.versions.length) {
 			source += this.versions[0].compileSource(from, apiName);
@@ -1388,7 +1385,7 @@ module.exports = Reference.clss('ModulePackage', function (def) {
 	if (typeof module !== 'undefined') {
 		module.exports = api.freeze();
 	} else {
-		api = api.freeze("/Users/roland/github/rolandpoulter/node-box/lib/Box");
+		api = api.freeze("/Users/rolandpoulter/github/node-box/lib/Box");
 		api.conflict = this.module;
 		api.noConflict = function () {
 			if (require) that.require = that.require.conflict;

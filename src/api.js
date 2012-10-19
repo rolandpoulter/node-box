@@ -1,4 +1,3 @@
-/*jslint smarttabs:true */
 (function(){"use strict";
 	var global = this,
 	    modules = {};

@@ -1,0 +1,4 @@
+{
+	"name": "node-box_test",
+	"dependencies": {"spc": "0.0.1"}
+}
